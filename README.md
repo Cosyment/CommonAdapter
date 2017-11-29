@@ -1,0 +1,5 @@
+# CommonAdapter
+dataBinding recyclerView通用适配器
+支持item布局动态布局，对于简单列表显示只需一句代码搞定
+recyclerView.setAdapter(new CommonAdapter<model,itemDataBinding>(R.layout.item,mDatas);
+业务复执布局可继承自CommonAdapter后重写convert方法即可，大大简化RecyclerView 使用dataBinding时item布局的局限
